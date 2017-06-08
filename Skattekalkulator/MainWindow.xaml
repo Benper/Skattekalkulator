@@ -1,0 +1,28 @@
+﻿<Window x:Class="Skattekalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Skattekalkulator"
+        mc:Ignorable="d"
+        Title="Trygdeavgft kalkulator" Height="180" Width="300" Background="LightGray">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Alder" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="100"/>
+                <TextBox Name="tbbyear" Text="{Binding Age, Mode=TwoWay}" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Årslønn" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="100"/>
+                <TextBox Name="tbxsalary" Text="{Binding Salery, Mode=TwoWay}" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Trygdeavgift" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="100"/>
+                <Label Content="{Binding TaxToPay, Mode=OneWay}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" />
+            </StackPanel>
+            <StackPanel>
+                <Label Content="{Binding InfoMessage, Mode=TwoWay}" Margin="10,10,0,0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
