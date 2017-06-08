@@ -6,6 +6,6 @@
 
 ## Build
 
-* Åpne i Visual Studio, Bygg og kjør.
+* Åpne i Visual Studio, bygg og kjør.
 * Eller kjør Skattekalkulator.exe.
 * Skriv inn alder og lønn.
